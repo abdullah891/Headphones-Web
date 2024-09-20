@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    background-color: #ffffff;
+    padding: 2vw 2vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw ;
+}
+nav h2{
+    font-size: 2vw;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+nav .menu h5{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width:500px) {
+    .main{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        background-color: red;
+    }
+    nav .menu{
+        display: none;
+    }
+    nav h2{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .home{
+        /* position: relative; */
+        width: 100%;
+        background-color: red;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .home .home-content{
+        position: absolute;
+        top: 10%;
+    }
+    .home .home-content h3{
+        font-size: 4vw;
+    }
+    .home .home-content h2{
+        font-size: 8vw;
+    }
+    .home .home-content h1{
+        font-size: 11.5vw;
+    }
+    .home .home-content button{
+        width: 150px;
+        height: 40px;
+    }
+    .home img{
+        /* width: 100%; */
+        /* height: 100%; */
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+ 
+
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: #D6D6D6;
+    padding: 2vw 4vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.home-content{
+    overflow: hidden;
+}
+
+.home-content h3{
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.715);
+    text-transform: capitalize;
+    overflow-y: hidden;
+}   
+.home-content h2{
+    font-size: 6vw;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    display: inline;
+    overflow-y: hidden;
+}   
+.home-content h1{
+    font-size: 11vw;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}   
+.home-content button{
+    height: 3.5vw;
+    width: 13vw;
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 9px;
+}
+.home img{
+    width: 40%;
+    object-fit: cover;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translate(-50% , -50%);
+}
+
+.devices{
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 0;
+}
+.t-devices{
+    height: 49%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+.t-devices .one{
+    height: 100%;
+    width: 25%;
+    background-image: url("Images/Gadget\ Social\ media\ web\ banner\ templates.jpeg");
+    background-size: cover;
+    border-radius: 20px;
+    background-position: bottom;
+}
+.t-devices .two{
+    height: 100%;
+    width: 25%;
+    background-image: url("Images/Temos\ Novidades\ Smart\ Watch\ Loja\ de\ Importados\ Social\ Media\ PSD\ Editável.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+
+  
+}
+.t-devices .three{
+    height: 100%;
+    width: 45%;
+    background-image: url("Images/Redmibook\ Social\ Media\ banner\ templates.jpeg");
+    background-size: cover;
+    background-position: 0% 60%;
+    border-radius: 20px;
+}
+
+.b-devices{
+    height: 49%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.b-devices .b-one{
+    height: 100%;
+    width: 53%;
+    background-color: red;
+    border-radius: 20px;
+    background-image: url("Images/game.console.webp");
+    background-size: cover;
+}
+.b-devices .b-two{
+    height: 100%;
+    width: 22%;
+    background-color: rgb(23, 96, 160);
+    border-radius: 20px;
+    background-image: url("Images/comulus.jpeg");
+    background-size: cover;
+}
+.b-devices .b-three{
+    height: 100%;
+    width: 22%;
+    background-color: rgb(27, 14, 14);
+    border-radius: 20px;
+    background-image: url("Images/amazon.speaker.jpeg");
+    background-size: cover;
+}
+
+.badges{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shipping{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shipping i{
+    font-size: 40px;
+    color: red;
+}
+.shipping p{
+    font-weight: 500;
+}
+
+.money{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.money i{
+    font-size: 40px;
+    color: red;
+}
+.money p{
+    font-weight: 500;
+}
+.online{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.online i{
+    font-size: 40px;
+    color: red;
+}
+.online p{
+    font-weight: 500;
+}
+.payment{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.payment i{
+    font-size: 40px;
+    color: red;
+}
+.payment p{
+    font-weight: 500;
+}
+
+.banner{
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.797);
+    margin-top: 10vw;
+    border-radius: 20px;
+    display: flex;
+    align-self:center;
+    justify-content: space-between;
+    position: relative;
+}
+.banner img{
+    position: absolute;
+    height: 120%;
+    object-fit: cover;
+    top: 32%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+.b-left{
+    width: 59%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+.b-left h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 7vw;
+    line-height: 0.9;
+    font-weight: 800;
+}
+.b-left p{
+    color: white;
+    font-weight: 200;
+}
+
+.b-right{
+    width: 39%;
+    height: 100%;
+    display: flex;
+    padding: 1vw 1vw;
+    position: relative;
+}
+.b-right-content{
+    color: white;
+    width: 90%;
+    position: absolute;
+    top: 20%;
+}
+
+.b-right-content h2{
+    color: white;
+    font-size: 3vw;
+
+}
+.b-right-content button{
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    color: red;
+    border-radius: 20px;
+    padding: 0 1vw;
+    margin-top: 1vw;
+}
+
+.best-seller{
+    height: 100vh;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.best-seller h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.best-seller p{
+    text-align: center;
+    font-size: 12px;
+    color: #a6a4a4;
+}
+.best-seller-top{
+    height: 49%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.best-seller-top .box{
+    height: 70%;
+    width: 20%;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box p{
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.box img{
+    object-fit: cover;
+    height: 100%;
+    width: 80%;
+}
+
+.best-seller-bottom{
+    height: 49%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.best-seller-bottom .box{
+    height: 70%;
+    width: 20%;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
